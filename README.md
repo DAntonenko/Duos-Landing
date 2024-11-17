@@ -13,7 +13,7 @@ npm install
 For running the development server:
 
 ```bash
-pnpm run dev
+pnpm dev
 # or
 npm dev
 ```
