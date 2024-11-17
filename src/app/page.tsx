@@ -13,6 +13,15 @@ const Main: FC = () => {
   const searchParams = useSearchParams();
   const leadParam = searchParams.get('l');
 
+  const duosExampleSizes = `
+    (max-width: 375px) 286px,
+    (max-width: 600px) 456px,
+    (max-width: 768px) 182px,
+    (max-width: 1200px) 286px,
+    (max-width: 1400px) 340px,
+    452px
+  `
+
   return (
     <main>
       <LeadSection searchParamsVariant={leadParam} />
@@ -22,7 +31,7 @@ const Main: FC = () => {
           <Image
             className={styles.example}
             src='/pics/duos_example_1.png'
-            sizes='(max-width: 600px) 343px, 1572px' // To do: change to real pics width when proper pics will be
+            sizes= {duosExampleSizes}
             fill
             quality={100}
             priority
@@ -33,6 +42,7 @@ const Main: FC = () => {
           <Image
             className={styles.example}
             src='/pics/duos_example_2.png'
+            sizes= {duosExampleSizes}
             fill
             quality={100}
             priority
@@ -43,6 +53,7 @@ const Main: FC = () => {
           <Image
             className={styles.example}
             src='/pics/duos_example_3.png'
+            sizes= {duosExampleSizes}
             fill
             quality={100}
             priority
