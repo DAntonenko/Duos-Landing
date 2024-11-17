@@ -1,0 +1,67 @@
+@import '../../app/variables.module';
+
+.lead {
+  padding-top: 156px;
+}
+
+.main_heading {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin-bottom: 1.15rem;
+
+  @media (min-width: $screen-sm) {
+    font-size: 4rem;
+    margin-bottom: 2.3rem;
+  }
+
+  &_circled {
+    display: inline-block;
+    outline: 3px solid var(--mint-base);
+    border-radius: 2.5rem;
+  }
+
+  &_preceded_by_logo {
+    padding-left: 3.2rem;
+    background: no-repeat left center url('/backgrounds/circle_and_halfmoon.svg');
+  }
+
+  &_followed_by_logo {
+    padding-right: 3.2rem;
+    background: no-repeat right center url('/backgrounds/circle_and_halfmoon.svg');
+  }
+
+  &_underlined {
+    background: no-repeat center bottom / 100% url('/backgrounds/wave.svg');
+  }
+}
+
+.lead_text {
+  font-size: 1.13rem;
+  margin-bottom: 1.8rem;
+
+  @media (min-width: $screen-sm) {
+    font-size: 1.8rem;
+    margin-bottom: 3.25rem;
+  }
+}
+
+.stores_buttons_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @media (min-width: $screen-sm) {
+    gap: 28px;
+  }
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  padding: 6vw;
+}
+
+.button_image {
+  position: static;
+}
+

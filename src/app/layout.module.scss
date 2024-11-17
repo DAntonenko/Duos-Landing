@@ -1,0 +1,19 @@
+@import '../app/variables.module';
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-width: 375px;
+  padding: 0 var(--horizontal-padding-initial);
+
+  @media (min-width: $screen-sm) {
+    padding: 0 var(--horizontal-padding-sm);
+  }
+}
+
+.main_container {
+  width: 100%;
+  max-width: 1920px;
+}

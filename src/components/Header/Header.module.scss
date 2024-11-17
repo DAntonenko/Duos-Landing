@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px var(--horizontal-padding-initial);
+  background-color: var(--white);
+  z-index: 1000;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.button_link {
+  margin-left: auto;
+}
+
+.button_text {
+  padding: 6px 26px;
+
+  @media (min-width: var(--screen-sm)) {
+    padding: 10px 42px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+}

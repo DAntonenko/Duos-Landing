@@ -1,0 +1,66 @@
+.invitation {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.invitation_heding {
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+.examples {
+  margin-top: 72px;
+}
+
+// ¯\_(ツ)_/¯
+//     ||
+//     \/
+.example_container {
+  position: relative; // Because otherwise Next.js throws warning to console. I don't know why - everything works good.
+}
+
+// ¯\_(ツ)_/¯
+//     ||
+//     \/
+.example {
+  position: static !important; // Alas! Because <Image> with 'fill' prop unexpectedly sets it's own position to 'absolute', and it's not what is needed!
+}
+
+$avatarsNumber: 5;
+
+.invitation_avatars_container {
+  --avatar_size: 80px;
+  --avatar_shift: 1.5;
+
+  position: relative;
+  // width: calc(var(--avatar_size) * ($avatarsNumber / var(--avatar_shift)) + (var(--avatar_size) / var(--avatar_shift) / 2));
+  width: calc(var(--avatar_size) * ($avatarsNumber * 2 + 1) / (2 * var(--avatar_shift))); // shorter, but nihuja not understandable!
+  height: 80px;
+  margin: 0 auto;
+}
+
+.invitation_avatar {
+  position: absolute;
+  top: 0;
+  
+  @for $i from 1 through $avatarsNumber {
+    &:nth-child(#{$i}) {
+      left: calc((#{$i} - 1) * var(--avatar_size) / var(--avatar_shift));
+      z-index: $i * -1;
+    }
+  }
+}
+
+.invitation_text {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.discord_button {
+  width: 100%;
+  gap: 12px;
+  padding: 18px 28px;
+}
