@@ -36,18 +36,20 @@ const Header: FC = () => {
       transition={{ duration: 0.3 }}
     >
       <div className={styles.logo_container}>
-        <Image
-          src='/logos/duos_logo.svg'
-          width={36}
-          height={36}
-          alt='Duos logo'
-        />
-        <Image
-          src='/logos/duos_typo.svg'
-          width={56}
-          height={20}
-          alt='Duos typo'
-        />
+        <div className={styles.logo_pic_container}>
+          <Image
+            src='/logos/duos_logo.svg'
+            fill
+            alt='Duos logo'
+          />
+         </div>
+         <div className={styles.logo_typo_container}>
+          <Image
+            src='/logos/duos_typo.svg'
+            fill
+            alt='Duos typo'
+          />
+        </div>
       </div>
       <Link
         className={styles.button_link}

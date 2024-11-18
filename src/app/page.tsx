@@ -20,7 +20,7 @@ const Main: FC = () => {
     (max-width: 1200px) 286px,
     (max-width: 1400px) 340px,
     452px
-  `
+  `;
 
   return (
     <main>

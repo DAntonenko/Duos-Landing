@@ -1,3 +1,5 @@
+@import '../../app/variables.module';
+
 .header {
   position: fixed;
   top: 0;
@@ -8,12 +10,59 @@
   padding: 20px var(--horizontal-padding-initial);
   background-color: var(--white);
   z-index: 1000;
+
+  @media (min-width: $screen-sm) {
+    padding: 32px var(--horizontal-padding-sm);
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 26px var(--horizontal-padding-md);
+  }
 }
 
 .logo_container {
   display: flex;
-  align-items: center;
   gap: 12px;
+
+  @media (min-width: $screen-sm) {
+    gap: 18px;
+  }
+
+  @media (min-width: $screen-md) {
+    gap: 8px;
+  }
+
+  & .logo_pic_container {
+    position: relative;
+    width: 36px;
+    height: 36px;
+
+    @media (min-width: $screen-sm) {
+      width: 58px;
+      height: 58px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  & .logo_typo_container {
+    position: relative;
+    width: 56px;
+    height: 36px;
+
+    @media (min-width: $screen-sm) {
+      width: 90px;
+      height: 58px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 46px;
+      height: 30px;
+    }
+  }
 }
 
 .button_link {
@@ -23,9 +72,15 @@
 .button_text {
   padding: 6px 26px;
 
-  @media (min-width: var(--screen-sm)) {
+  @media (min-width: $screen-sm) {
     padding: 10px 42px;
     font-size: 1.6rem;
     line-height: 1.75;
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 8px 26px;
+    font-size: .8rem;
+    line-height: 1.4;
   }
 }
