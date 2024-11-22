@@ -18,6 +18,14 @@
   @media (min-width: $screen-md) {
     padding: 26px var(--horizontal-padding-md);
   }
+
+  @media (min-width: $screen-lg) {
+    padding: 40px var(--horizontal-padding-lg);
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 40px var(--horizontal-padding-xl);
+  }
 }
 
 .logo_container {
@@ -30,6 +38,10 @@
 
   @media (min-width: $screen-md) {
     gap: 8px;
+  }
+
+  @media (min-width: $screen-lg) {
+    gap: 14px;
   }
 
   & .logo_pic_container {
@@ -46,6 +58,11 @@
       width: 30px;
       height: 30px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   & .logo_typo_container {
@@ -61,6 +78,11 @@
     @media (min-width: $screen-md) {
       width: 46px;
       height: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 72px;
+      height: 46px;
     }
   }
 }
@@ -82,5 +104,10 @@
     padding: 8px 26px;
     font-size: .8rem;
     line-height: 1.4;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 10px 42px;
+    font-size: 1.25rem;
   }
 }

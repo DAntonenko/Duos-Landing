@@ -15,6 +15,14 @@
   @media (min-width: $screen-md) {
     padding: 0 var(--horizontal-padding-md);
   }
+
+  @media (min-width: $screen-lg) {
+    padding: 0 var(--horizontal-padding-lg);
+  }
+  
+  @media (min-width: $screen-xl) {
+    padding: 0 var(--horizontal-padding-xl);
+  }
 }
 
 .main_container {
