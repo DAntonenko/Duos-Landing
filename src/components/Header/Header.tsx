@@ -35,30 +35,32 @@ const Header: FC = () => {
       animate={{ y: scrollDirection === 'down' ? '-100%' : '0' }}
       transition={{ duration: 0.3 }}
     >
-      <div className={styles.logo_container}>
-        <div className={styles.logo_pic_container}>
-          <Image
-            src='/logos/duos_logo.svg'
-            fill
-            alt='Duos logo'
-          />
-         </div>
-         <div className={styles.logo_typo_container}>
-          <Image
-            src='/logos/duos_typo.svg'
-            fill
-            alt='Duos typo'
-          />
+      <div className={styles.header_inner_container}>
+        <div className={styles.logo_container}>
+          <div className={styles.logo_pic_container}>
+            <Image
+              src='/logos/duos_logo.svg'
+              fill
+              alt='Duos logo'
+            />
+          </div>
+          <div className={styles.logo_typo_container}>
+            <Image
+              src='/logos/duos_typo.svg'
+              fill
+              alt='Duos typo'
+            />
+          </div>
         </div>
+        <Link
+          className={styles.button_link}
+          href='#'
+        >
+          <Button className={styles.button}>
+            <p className={styles.button_text}>Try Now</p>
+          </Button>
+        </Link>
       </div>
-      <Link
-        className={styles.button_link}
-        href='#'
-      >
-        <Button className={styles.button}>
-          <p className={styles.button_text}>Try Now</p>
-        </Button>
-      </Link>
     </motion.header>
   );
 };

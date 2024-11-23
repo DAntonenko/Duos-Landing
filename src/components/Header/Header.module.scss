@@ -6,9 +6,10 @@
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
+  justify-content: center;
   padding: 20px var(--horizontal-padding-initial);
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(20px);
   z-index: 1000;
 
   @media (min-width: $screen-sm) {
@@ -26,6 +27,13 @@
   @media (min-width: $screen-xl) {
     padding: 40px var(--horizontal-padding-xl);
   }
+}
+
+.header_inner_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: calc($screen-xxl - var(--horizontal-padding-xl) * 2);
 }
 
 .logo_container {
