@@ -114,31 +114,27 @@ const LeadSection: FC<ILeadSectionProps> = ({ searchParamsVariant }) => {
           className={styles.button_link}
           href='#'
         >
-          <Button className={styles.button}>
-            <Image
-              className={styles.button_image}
-              src='/backgrounds/appstore.svg'
-              fill
-              // width={103}
-              // height={29}
-              alt='Appstore button'
-            />
-          </Button>
+          <Image
+            className={styles.button_image}
+            src='/backgrounds/appstore.svg'
+            fill
+            // width={103}
+            // height={29}
+            alt='Appstore button'
+          />
         </Link>
         <Link
           className={styles.button_link}
           href='#'
         >
-          <Button className={styles.button}>
-            <Image
-              className={styles.button_image}
-              src='/backgrounds/googleplay.svg'
-              fill
-              // width={100}
-              // height={29}
-              alt='Googleplay button'
-            />
-          </Button>
+          <Image
+            className={styles.button_image}
+            src='/backgrounds/googleplay.svg'
+            fill
+            // width={100}
+            // height={29}
+            alt='Googleplay button'
+          />
         </Link>
       </div>
     </section>

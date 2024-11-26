@@ -93,12 +93,26 @@
   @media (min-width: $screen-sm) {
     gap: 28px;
   }
+
+  @media (min-width: $screen-md) {
+    width: 50%;
+    gap: 4%;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 40%;
+    gap: 4%;
+  }
 }
 
-.button {
+.button_link {
   position: relative;
   width: 100%;
   padding: 6vw;
+
+  @media (min-width: $screen-md) {
+    padding: 15%;
+  }
 }
 
 .button_image {
