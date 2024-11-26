@@ -127,7 +127,7 @@ const Main: FC = () => {
           </Button>
         </Link>
       </section>
-      Gamarjoba!
+      Gamarjoba!!!
     </main>
   );
 };
