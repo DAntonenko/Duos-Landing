@@ -18,5 +18,5 @@ jobs:
 
       - name: Push to mirror repository
         run: |
-          git remote add mirror https://${{ secrets.MIRROR_TOKEN }}@github.com/lifter-ai/duos-landing.git
+          git remote add mirror https://${{ secrets.MIRROR_TOKEN }}@github.com/lifter-ai/duos-landing
           git push --force mirror main
