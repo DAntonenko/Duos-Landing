@@ -103,6 +103,10 @@
     width: 40%;
     gap: 4%;
   }
+
+  @media (min-width: $screen-xxl) {
+    width: 30%;
+  }
 }
 
 .button_link {

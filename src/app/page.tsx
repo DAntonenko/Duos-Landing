@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
+import classNames from 'classnames';
 import styles from './page.module.scss';
 
 const Main: FC = () => {
@@ -37,6 +38,9 @@ const Main: FC = () => {
             priority
             alt='Duos example'
           />
+          <p className={classNames(styles.example_text, styles.example_text__1)}>
+            Tackle industry-specific topics and gain personalized feedback to&nbsp;elevate your performance
+          </p>
         </div>
         <div className={styles.example_container}>
           <Image
@@ -48,6 +52,9 @@ const Main: FC = () => {
             priority
             alt='Duos example'
           />
+          <p className={classNames(styles.example_text, styles.example_text__2)}>
+            Raise your interview readiness by&nbsp;playing out realistic interview scenarios against AI interviewers
+          </p>
         </div>
         <div className={styles.example_container}>
           <Image
@@ -59,6 +66,9 @@ const Main: FC = () => {
             priority
             alt='Duos example'
           />
+          <p className={classNames(styles.example_text, styles.example_text__3)}>
+            Practice, make mistakes and get skills for the real world without ever failing real interviews
+          </p>
         </div>
         
       </section>
@@ -127,7 +137,6 @@ const Main: FC = () => {
           </Button>
         </Link>
       </section>
-      Gamarjoba!
     </main>
   );
 };

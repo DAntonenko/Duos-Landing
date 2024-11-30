@@ -1,3 +1,5 @@
+@import '../app/variables.module';
+
 .invitation {
   display: flex;
   flex-direction: column;
@@ -11,14 +13,46 @@
 }
 
 .examples {
-  margin-top: 72px;
+  background-color: var(--mint-background);
+  border-radius: 40px;
+  margin-top: 40vw;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    gap: 2%;
+    padding: 0 4% 16%;
+    margin-top: 20vw;
+  }
+
+  @media (min-width: $screen-xxl) {
+    margin-top: 264px;
+  }
 }
 
-// ¯\_(ツ)_/¯
-//     ||
-//     \/
 .example_container {
-  position: relative; // Because otherwise Next.js throws warning to console. I don't know why - everything works good.
+  position: relative;
+  top: -24vw;
+  left: 6%;
+  width: 87%;
+  margin-bottom: 50%;
+
+  @media (min-width: $screen-md) {
+    top: -6vw;
+    left: 0;
+    margin-bottom: 0;
+
+    @media (min-width: $screen-xxl) {
+      top: -80px;
+    }
+
+    &:nth-child(2) {
+      top: -10vw;
+
+      @media (min-width: $screen-xxl) {
+        top: -172px;
+      }
+    }
+  }
 }
 
 // ¯\_(ツ)_/¯
@@ -26,6 +60,68 @@
 //     \/
 .example {
   position: static !important; // Alas! Because <Image> with 'fill' prop unexpectedly sets it's own position to 'absolute', and it's not what is needed!
+}
+
+.example_text {
+  position: absolute;
+  padding: 8%;
+  font-size: 4vw;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow:
+    0px 175px 49px 0px rgba(64, 160, 144, 0.00),
+    0px 112px 45px 0px rgba(64, 160, 144, 0.01),
+    0px 63px 38px 0px rgba(64, 160, 144, 0.05),
+    0px 28px 28px 0px rgba(64, 160, 144, 0.09),
+    0px 7px 15px 0px rgba(64, 160, 144, 0.10);
+  z-index: 10;
+
+  @media (min-width: $screen-sm) {
+    border-radius: 32px;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 1.4vw;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $screen-xxl) {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  &__1 {
+    bottom: -16%;
+    left: -2%;
+    width: 75%;
+
+    @media (min-width: $screen-md) {
+      bottom: -4%;
+      left: -20%;
+    }
+  }
+
+  &__2 {
+    bottom: -20%;
+    left: 2%;
+    width: 110%;
+
+    @media (min-width: $screen-md) {
+      bottom: -30%;
+      left: 26%;
+    }
+  }
+
+  &__3 {
+    bottom: -7%;
+    right: -10%;
+    width: 65%;
+
+    @media (min-width: $screen-md) {
+      bottom: 38%;
+      right: -24%;
+    }
+  }
 }
 
 $avatarsNumber: 5;

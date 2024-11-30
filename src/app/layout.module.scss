@@ -7,6 +7,7 @@
   width: 100vw;
   min-width: 375px;
   padding: 0 var(--horizontal-padding-initial);
+  overflow-x: hidden;
 
   @media (min-width: $screen-sm) {
     padding: 0 var(--horizontal-padding-sm);
