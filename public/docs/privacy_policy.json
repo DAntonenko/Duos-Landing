@@ -1,0 +1,91 @@
+{
+    "title": "Privacy Policy for Duos App",
+    "lastUpdated": "17.10.2024",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Welcome to Duos, an AI-powered interview practice app developed by Marina Gladysheva for Duos AI (also known as Lifter.ai), registered with the Chamber of Commerce under KVK81462549. At Duos, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, protect, and disclose information and data when you use the Duos App."
+            ]
+        },
+        {
+            "title": "Information We Collect",
+            "paragraphs": [
+                "When you use the Services, we collect certain information from you. This information can be broken down into four categories:",
+                "a. Information You Give Us: We may collect personal data such as your full name, email address, professional information, and account credentials.",
+                "b. Information We Receive From Other Sources: We currently support login only via Google and Apple (social login). When you choose to create your Duos account using these credentials, we collect your name, email, and profile picture associated with that account.",
+                "c. Information We Collect Automatically: We collect usage data, device information, and use cookies and similar tracking technologies.",
+                "d. Information We Create or Generate: We infer or generate new information from other personal data we collect, including to provide you with the Services you request."
+            ]
+        },
+        {
+            "title": "How We Use Your Information",
+            "paragraphs": [
+                "We use the collected data for various purposes including providing and maintaining our Service, notifying you about changes, allowing you to participate in interactive features, providing customer care and support, improving the Service, monitoring usage, detecting and preventing technical issues, and personalizing your experience."
+            ]
+        },
+        {
+            "title": "Legal Basis for Processing Personal Data",
+            "paragraphs": [
+                "We process your personal data on the following legal grounds: your consent, performance of a contract when we provide you with our services, and legitimate interests in providing and improving our services."
+            ]
+        },
+        {
+            "title": "Data Sharing and Disclosure",
+            "paragraphs": [
+                "a. Service Providers: We may employ third-party companies and individuals to facilitate our Service, provide the Service on our behalf, perform Service-related services or assist us in analyzing how our Service is used.",
+                "b. Analytics: We use third-party Service Providers to monitor and analyze the use of our Service.",
+                "c. Cloud Services: We use cloud services to host and process data related to our Service.",
+                "d. AI and Voice Processing: We utilize various voice and language model providers to process user input for our AI-powered interview simulations.",
+                "e. Legal Requirements: We may disclose your Personal Data if required by law or in the good faith belief that such action is necessary to protect our rights or comply with a legal obligation."
+            ]
+        },
+        {
+            "title": "Data Security",
+            "paragraphs": [
+                "We take reasonable steps to protect your Personal Data from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the Internet, or method of electronic storage is 100% secure."
+            ]
+        },
+        {
+            "title": "Your Data Protection Rights Under GDPR",
+            "paragraphs": [
+                "If you are a resident of the European Economic Area (EEA), you have certain data protection rights including the right to access, update, delete, restrict, or object to our processing of your Personal Data.",
+                "As a GDPR-compliant service, we provide you with control over your personal data. You can delete all your data and your account via the settings in our application."
+            ]
+        },
+        {
+            "title": "Children's Privacy",
+            "paragraphs": [
+                "Our Service does not address anyone under the age of 16 ('Children'). We do not knowingly collect personally identifiable information from anyone under the age of 16. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers."
+            ]
+        },
+        {
+            "title": "Changes to This Privacy Policy",
+            "paragraphs": [
+                "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date at the top of this Privacy Policy."
+            ]
+        },
+        {
+            "title": "User Rights and Data Retention",
+            "paragraphs": [
+                "You can choose not to provide certain information, but this may limit your ability to use certain features of the Duos App.",
+                "We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy.",
+                "You can request deletion of your account and associated data by contacting us or via the settings in our application."
+            ]
+        },
+        {
+            "title": "International Data Transfers",
+            "paragraphs": [
+                "Your information, including Personal Data, may be transferred to and maintained on computers located outside of your state, province, country or other governmental jurisdiction. We host servers in multiple locations across the globe, which may or may not be different from your country."
+            ]
+        },
+        {
+            "title": "Contact Us",
+            "paragraphs": [
+                "If you have any questions about this Privacy Policy, please contact us:",
+                "- By email: help@duos-ai.com",
+                "- By visiting our website: duos-ai.com"
+            ]
+        }
+    ]
+}

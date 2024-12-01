@@ -1,7 +1,5 @@
 import { FC } from 'react';
-// import Image from 'next/image';
 import Link from 'next/link';
-// import Button from '@/components/Button/Button';
 import styles from './Footer.module.scss';
 
 const Footer: FC = () => {
@@ -16,13 +14,13 @@ const Footer: FC = () => {
         </Link>
         <Link
           className={styles.link}
-          href='#'
+          href='/privacy_policy'
         >
           Privacy Policy
         </Link>
         <Link
           className={styles.link}
-          href='#'
+          href='/terms_of_service'
         >
           Terms of Service
         </Link>
