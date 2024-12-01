@@ -54,7 +54,7 @@ const Header: FC = () => {
         </div>
         <Link
           className={styles.button_link}
-          href='#'
+          href='/qr'
         >
           <Button className={styles.button}>
             <p className={styles.button_text}>Try Now</p>

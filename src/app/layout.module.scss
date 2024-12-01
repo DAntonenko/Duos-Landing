@@ -6,6 +6,7 @@
   align-items: center;
   width: 100vw;
   min-width: 375px;
+  height: 100vh;
   padding: 0 var(--horizontal-padding-initial);
   overflow-x: hidden;
 
@@ -29,4 +30,25 @@
 .main_container {
   width: 100%;
   max-width: calc($screen-xxl - var(--horizontal-padding-xl) * 2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+
+  @media (min-width: $screen-sm) {
+    margin-top: 128px;
+  }
+
+  @media (min-width: $screen-md) {
+    margin-top: 86px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-top: 128px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-top: 160px;
+  }
 }

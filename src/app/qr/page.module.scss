@@ -1,0 +1,21 @@
+@import '../variables.module';
+
+.qr {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.qr_text {
+  width: 90%;
+  text-align: center;
+  font-size: 1.3rem;
+
+  @media (min-width: $screen-md) {
+    width: 32rem;
+    font-size: 1.75rem;
+  }
+}
