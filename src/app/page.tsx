@@ -70,58 +70,63 @@ const Main: FC = () => {
             Practice, make mistakes and get skills for the real world without ever failing real interviews
           </p>
         </div>
-        
       </section>
         
       <section className={styles.invitation}>
         <h2 className={styles.invitation_heding}>Join Duos community</h2>
-        <div className={styles.invitation_avatars_container}>
-          <Image
-            className={styles.invitation_avatar}
-            src='/avatars/ava_1_x1.png'
-            sizes='80px, (min-width: 600px) 128px, (min-width: 768px) 64px, (min-width: 1200px) 100px'
-            width={80}
-            height={80}
-            quality={100}
-            alt='Avatar'
-          />
-          <Image
-            className={styles.invitation_avatar}
-            src='/avatars/ava_2_x1.png'
-            width={80}
-            height={80}
-            quality={100}
-            alt='Avatar'
-          />
-          <Image
-            className={styles.invitation_avatar}
-            src='/avatars/ava_3_x1.png'
-            width={80}
-            height={80}
-            quality={100}
-            alt='Avatar'
-          />
-          <Image
-            className={styles.invitation_avatar}
-            src='/avatars/ava_4_x1.png'
-            width={80}
-            height={80}
-            quality={100}
-            alt='Avatar'
-          />
-          <Image
-            className={styles.invitation_avatar}
-            src='/avatars/ava_5_x1.png'
-            width={80}
-            height={80}
-            quality={100}
-            alt='Avatar'
-          />
+        <div className={styles.invitation_wrapper}>
+          <div className={styles.invitation_avatars_container}>
+            <div className={styles.invitation_avatar}>
+              <Image
+                src='/avatars/ava_1_x1.png'
+                sizes='80px, (min-width: 600px) 128px, (min-width: 768px) 64px, (min-width: 1200px) 100px'
+                fill
+                quality={100}
+                alt='Avatar'
+              />
+            </div>
+            <div className={styles.invitation_avatar}>
+              <Image
+                src='/avatars/ava_2_x1.png'
+                sizes='80px, (min-width: 600px) 128px, (min-width: 768px) 64px, (min-width: 1200px) 100px'
+                fill
+                quality={100}
+                alt='Avatar'
+              />
+            </div>
+            <div className={styles.invitation_avatar}>
+              <Image
+                src='/avatars/ava_3_x1.png'
+                sizes='80px, (min-width: 600px) 128px, (min-width: 768px) 64px, (min-width: 1200px) 100px'
+                fill
+                quality={100}
+                alt='Avatar'
+              />
+            </div>
+            <div className={styles.invitation_avatar}>
+              <Image
+                src='/avatars/ava_4_x1.png'
+                sizes='80px, (min-width: 600px) 128px, (min-width: 768px) 64px, (min-width: 1200px) 100px'
+                fill
+                quality={100}
+                alt='Avatar'
+              />
+            </div>
+            <div className={styles.invitation_avatar}>
+              <Image
+                src='/avatars/ava_5_x1.png'
+                sizes='80px, (min-width: 600px) 128px, (min-width: 768px) 64px, (min-width: 1200px) 100px'
+                fill
+                quality={100}
+                alt='Avatar'
+              />
+            </div>
+          </div>
+          <p className={styles.invitation_text}>
+            Discover a&nbsp;welcoming group of&nbsp;fellow job seekers and industry pros.
+            Share your story, give feedback, and stay up&nbsp;to&nbsp;date with the app development
+          </p>
         </div>
-        <p className={styles.invitation_text}>
-          Discover a&nbsp;welcoming group of&nbsp;fellow job seekers and industry pros.
-          Share your story, give feedback, and stay up&nbsp;to&nbsp;date with the app development
-        </p>
         <Link
           className={styles.button_link}
           href='https://discord.com/channels/1218939899118485635/1218939899118485637'
