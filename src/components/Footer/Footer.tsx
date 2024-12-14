@@ -8,7 +8,7 @@ const Footer: FC = () => {
       <nav className={styles.links}>
         <Link
           className={styles.link}
-          href='#'
+          href='/contact'
         >
           Contact Us
         </Link>

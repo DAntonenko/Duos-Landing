@@ -9,15 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.11.9",
     "classnames": "^2.5.1",
     "motion": "^11.11.17",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.79.4",
+    "sharp": "^0.33.5",
     "the-new-css-reset": "^1.11.3"
   },
   "devDependencies": {
+    "@amplitude/analytics-types": "^2.8.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -13,7 +13,7 @@
   z-index: 1000;
 
   @media (min-width: $screen-sm) {
-    padding: 32px var(--horizontal-padding-sm);
+    padding: 26px var(--horizontal-padding-md);
   }
 
   @media (min-width: $screen-md) {
@@ -40,16 +40,24 @@
   display: flex;
   gap: 12px;
 
+  a {
+    display: flex;
+    gap: 12px;
+  }
+
   @media (min-width: $screen-sm) {
-    gap: 18px;
+    gap: 8px;
+    a { gap: 8px; }
   }
 
   @media (min-width: $screen-md) {
     gap: 8px;
+    a { gap: 8px; }
   }
 
   @media (min-width: $screen-lg) {
     gap: 14px;
+    a { gap: 14px; }
   }
 
   & .logo_pic_container {
@@ -58,8 +66,8 @@
     height: 36px;
 
     @media (min-width: $screen-sm) {
-      width: 58px;
-      height: 58px;
+      width: 30px;
+      height: 30px;
     }
 
     @media (min-width: $screen-md) {
@@ -79,8 +87,8 @@
     height: 36px;
 
     @media (min-width: $screen-sm) {
-      width: 90px;
-      height: 58px;
+      width: 46px;
+      height: 30px;
     }
 
     @media (min-width: $screen-md) {
@@ -103,9 +111,9 @@
   padding: 6px 26px;
 
   @media (min-width: $screen-sm) {
-    padding: 10px 42px;
-    font-size: 1.6rem;
-    line-height: 1.75;
+    padding: 8px 26px;
+    font-size: .8rem;
+    line-height: 1.4;
   }
 
   @media (min-width: $screen-md) {

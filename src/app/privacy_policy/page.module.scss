@@ -1,0 +1,51 @@
+@import '../../app/variables.module';
+
+.privacy {
+  padding: 40px var(--horizontal-padding-initial);
+  max-width: calc($screen-xxl - var(--horizontal-padding-xl) * 2);
+  margin: 0 auto;
+  
+  @media (min-width: $screen-sm) {
+    padding: 60px var(--horizontal-padding-sm);
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 80px var(--horizontal-padding-md);
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 100px var(--horizontal-padding-lg);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section_title {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin-bottom: 8px;
+
+  @media (min-width: $screen-md) {
+    font-size: 2rem;
+  }
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--black_90);
+
+  @media (min-width: $screen-md) {
+    font-size: 1.125rem;
+  }
+}

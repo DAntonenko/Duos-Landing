@@ -28,6 +28,20 @@ const Main: FC = () => {
       <LeadSection searchParamsVariant={leadParam} />
 
       <section className={styles.examples}>
+      <div className={styles.example_container}>
+          <Image
+            className={styles.example}
+            src='/pics/duos_example_3.png'
+            sizes= {duosExampleSizes}
+            fill
+            quality={100}
+            priority
+            alt='Duos example'
+          />
+          <p className={classNames(styles.example_text, styles.example_text__3)}>
+            Practice stress-free job interviews with your voice 
+          </p>
+        </div>
         <div className={styles.example_container}>
           <Image
             className={styles.example}
@@ -39,7 +53,7 @@ const Main: FC = () => {
             alt='Duos example'
           />
           <p className={classNames(styles.example_text, styles.example_text__1)}>
-            Tackle industry-specific topics and gain personalized feedback to&nbsp;elevate your performance
+            Get feedback and improve your answers with a personal AI coach 
           </p>
         </div>
         <div className={styles.example_container}>
@@ -53,23 +67,10 @@ const Main: FC = () => {
             alt='Duos example'
           />
           <p className={classNames(styles.example_text, styles.example_text__2)}>
-            Raise your interview readiness by&nbsp;playing out realistic interview scenarios against AI interviewers
+            Raise your interview readiness faster by playing in a game mode
           </p>
         </div>
-        <div className={styles.example_container}>
-          <Image
-            className={styles.example}
-            src='/pics/duos_example_3.png'
-            sizes= {duosExampleSizes}
-            fill
-            quality={100}
-            priority
-            alt='Duos example'
-          />
-          <p className={classNames(styles.example_text, styles.example_text__3)}>
-            Practice, make mistakes and get skills for the real world without ever failing real interviews
-          </p>
-        </div>
+  
       </section>
         
       <section className={styles.invitation}>

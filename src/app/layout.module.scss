@@ -34,10 +34,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 5px;
 
   @media (min-width: $screen-sm) {
-    margin-top: 128px;
+    margin-top: 86px;
   }
 
   @media (min-width: $screen-md) {

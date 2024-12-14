@@ -66,6 +66,7 @@
 
   @media (min-width: $screen-sm) {
     border-radius: 32px;
+    font-size: 1.5rem;
   }
 
   @media (min-width: $screen-md) {
@@ -121,8 +122,8 @@ $avatarsNumber: 5;
   margin-top: 100px;
 
   @media (min-width: $screen-sm) {
-    gap: 76px;
-    margin-top: 168px;
+    gap: 32px;
+    margin-top: 76px;
   }
 
   @media (min-width: $screen-md) {
@@ -142,7 +143,7 @@ $avatarsNumber: 5;
   line-height: 1.2;
 
   @media (min-width: $screen-sm) {
-    font-size: 3.5rem;
+    font-size: 2.25rem;
   }
 
   @media (min-width: $screen-md) {
@@ -168,7 +169,7 @@ $avatarsNumber: 5;
   --avatar_shift: 1.5;
 
   @media (min-width: $screen-sm) {
-    --avatar_size: 128px;
+    --avatar_size: 64px;
   }
 
   @media (min-width: $screen-md) {
@@ -206,7 +207,8 @@ $avatarsNumber: 5;
   line-height: 1.4;
 
   @media (min-width: $screen-sm) {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
   }
 
   @media (min-width: $screen-md) {
@@ -226,8 +228,11 @@ $avatarsNumber: 5;
   padding: 18px 28px;
 
   @media (min-width: $screen-sm) {
-    padding: 28px;
-    font-size: 2rem;
+    width: initial;
+    padding: 1rem 32px;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $screen-md) {

@@ -6,6 +6,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import './global.scss';
 import styles from './layout.module.scss';
+import AmplitudeContextProvider from './amplitude_context';
 
 const poppins = localFont({
   src: [
@@ -26,12 +27,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang='en'>
       <body className={classNames(poppins.className, styles.main_wrapper)}>
         <div className={styles.main_container}>
           <Header />
-          {children}
+          <AmplitudeContextProvider>
+            {children}
+          </AmplitudeContextProvider>
           <Footer />
         </div>
       </body>

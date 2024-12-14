@@ -11,6 +11,8 @@ const Header: FC = () => {
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down' | null>(null);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const [isPhone, setIsPhone] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -28,6 +30,14 @@ const Header: FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY, scrollDirection]);
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isPhoneByUserAgent = userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad');
+    if (isPhoneByUserAgent != isPhone) {
+      setIsPhone(isPhoneByUserAgent)
+    }
+  }, [isPhone]);
+
   return (
     <motion.header
       className={styles.header}
@@ -37,25 +47,27 @@ const Header: FC = () => {
     >
       <div className={styles.header_inner_container}>
         <div className={styles.logo_container}>
-          <div className={styles.logo_pic_container}>
-            <Image
-              src='/logos/duos_logo.svg'
-              fill
-              alt='Duos logo'
-            />
-          </div>
-          <div className={styles.logo_typo_container}>
-            <Image
-              src='/logos/duos_typo.svg'
-              fill
-              alt='Duos typo'
-            />
-          </div>
+          <Link href="/">
+            <div className={styles.logo_pic_container}>
+              <Image
+                src='/logos/duos_logo.svg'
+                fill
+                alt='Duos logo'
+              />
+            </div>
+            <div className={styles.logo_typo_container}>
+              <Image
+                src='/logos/duos_typo.svg'
+                fill
+                alt='Duos typo'
+              />
+            </div>
+          </Link>
         </div>
         <Link
           className={styles.button_link}
-          href='/qr'
-        >
+          href={isPhone ? '/try' : '/qr'}
+          aria-label={isPhone ? 'TryButton' : "QRButton"}>
           <Button className={styles.button}>
             <p className={styles.button_text}>Try Now</p>
           </Button>

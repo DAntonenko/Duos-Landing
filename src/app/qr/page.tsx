@@ -1,19 +1,29 @@
-import { FC } from 'react';
+'use client';
+
+import { FC, useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './page.module.scss';
 
-const qr: FC = () => {
+const QR: FC = () => {
+  const [qrSource, setQR] = useState("/pics/duos-ai.com.qr.svg");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setQR('/pics/' + window.location.hostname + '.qr.svg');
+    }
+  }, []);
+
   return (
     <main className={styles.qr}>
       <div className={styles.qrcode_container}>
         <Image
-          src='/pics/qr-code.svg'
+          src={qrSource}
           width={342}
           height={342}
           // fill
           quality={100}
           priority
-          alt='Duos example'
+          alt="duos-ai.com/try"
         />
       </div>
       <p className={styles.qr_text}>
@@ -23,4 +33,4 @@ const qr: FC = () => {
   );
 };
 
-export default qr;
+export default QR;
